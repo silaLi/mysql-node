@@ -1,0 +1,73 @@
+{
+    "mysql": {
+        "host": "127.0.0.1",
+        "user": "root",
+        "password": "root",
+        "database": "video",
+        "port": 3306,
+        "cover": false,
+        "entities": {
+            "user": {
+                "props": {
+                    "USERID": "nvarchar(255)",
+                    "NAME": "nvarchar(255)",
+                    "FACEPICTRUE": "nvarchar(255)",
+                    "REGISTERTIME": "datetime",
+                    "MAILADRESS": "nvarchar(255)",
+                    "PASSWORD": "nvarchar(255)",
+                    "PERMISSION": "int(8)"
+                },
+                "PRIMARY_KEY": "USERID"
+            },
+            "video": {
+                "props": {
+                    "VIDEOID": "nvarchar(255)",
+                    "NAME": "nvarchar(255)",
+                    "FACEPICTRUEURL": "nvarchar(255)",
+                    "FACEPICTRUEPATH": "nvarchar(255)",
+                    "AUTHORID": "nvarchar(255)",
+                    "AUTHORNAME": "nvarchar(255)",
+                    "VIDEOPATH": "nvarchar(255)",
+                    "VIDEOURL": "nvarchar(255)",
+                    "STATE": "int(8)",
+                    "UPLOADTIME": "datetime",
+                    "PLAYCOUNT": "int(8)",
+                    "KEYWORD": "nvarchar(255)",
+                    "CATEGORYID": "nvarchar(255)",
+                    "CATEGORYNAME": "nvarchar(255)",
+                    "INTRODUCTION": "nvarchar(255)",
+                    "TIMELENGTH": "int(8)"
+                },
+                "PRIMARY_KEY": "VIDEOID"
+            },
+            "adminbg": {
+                "props": {
+                    "VIDEOID": "nvarchar(255)",
+                    "NAME": "nvarchar(255)",
+                    "FACEPICTRUEURL": "nvarchar(255)",
+                    "FACEPICTRUEPATH": "nvarchar(255)",
+                    "AUTHORID": "nvarchar(255)",
+                    "AUTHORNAME": "nvarchar(255)",
+                    "VIDEOPATH": "nvarchar(255)",
+                    "VIDEOURL": "nvarchar(255)",
+                    "STATE": "int(8)",
+                    "UPLOADTIME": "datetime",
+                    "PLAYCOUNT": "int(8)",
+                    "KEYWORD": "nvarchar(255)",
+                    "CATEGORYID": "nvarchar(255)",
+                    "CATEGORYNAME": "nvarchar(255)",
+                    "INTRODUCTION": "nvarchar(255)",
+                    "TIMELENGTH": "int(8)"
+                },
+                "PRIMARY_KEY": "VIDEOID"
+            },
+            "category": {
+                "props": {
+                    "CATEGORYID": "nvarchar(255)",
+                    "CATEGORYNAME": "nvarchar(255)"
+                },
+                "PRIMARY_KEY": "CATEGORYID"
+            }
+        }
+    }
+}
